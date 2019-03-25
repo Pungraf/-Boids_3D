@@ -7,7 +7,6 @@ public class Flock : MonoBehaviour
     public FlockAgent agentPrefab;
     List<FlockAgent> agents = new List<FlockAgent>();
     public FlockBehavior behavior;
-    public string VectorLayer = "Vector";
     Renderer rend;
 
     [Range(10, 500)] public int startingCount = 250;
@@ -41,6 +40,7 @@ public class Flock : MonoBehaviour
                 transform
             );
             newAgent.name = "Agent " + i;
+            newAgent.Initialize(this);
             agents.Add(newAgent);
         }
 
@@ -72,7 +72,7 @@ public class Flock : MonoBehaviour
     List<Transform> GetNearbyObjects(FlockAgent agent)
     {
         List<Transform> context = new List<Transform>();
-        Collider[] contextColliders = Physics.OverlapSphere(agent.transform.position, neighborRadius, LayerMask.GetMask(VectorLayer));
+        Collider[] contextColliders = Physics.OverlapSphere(agent.transform.position, neighborRadius, LayerMask.GetMask("Vector"));
         foreach (Collider c in contextColliders)
         {
             if (c != agent.AgentCollider && c)

@@ -66,6 +66,9 @@
     <Compile Include="Assets\vector\Behavior Scripts\CompositeBehavior.cs" />
     <Compile Include="Assets\vector\Behavior Scripts\StayInRadiusBehavior.cs" />
     <Compile Include="Assets\vector\Behavior Scripts\SteeredCohesionBehavior.cs" />
+    <Compile Include="Assets\vector\ContextFilter.cs" />
+    <Compile Include="Assets\vector\Filter Scripts\SameFlockFilter.cs" />
+    <Compile Include="Assets\vector\Script\FilteredFlockBehavior.cs" />
     <Compile Include="Assets\vector\Script\Flock.cs" />
     <Compile Include="Assets\vector\Script\FlockAgent.cs" />
     <Compile Include="Assets\vector\Script\FlockBehavior.cs" />

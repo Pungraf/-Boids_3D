@@ -19,10 +19,15 @@
             <e p="StayInRadiusBehavior.cs" t="Include" />
             <e p="SteeredCohesionBehavior.cs" t="Include" />
           </e>
+          <e p="ContextFilter.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="CompositeBehaviorEditor.cs" t="Include" />
           </e>
+          <e p="Filter Scripts" t="Include">
+            <e p="SameFlockFilter.cs" t="Include" />
+          </e>
           <e p="Script" t="Include">
+            <e p="FilteredFlockBehavior.cs" t="Include" />
             <e p="Flock.cs" t="Include" />
             <e p="FlockAgent.cs" t="Include" />
             <e p="FlockBehavior.cs" t="Include" />
